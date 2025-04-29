@@ -6,38 +6,58 @@
   <title>Donate to Support</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f2f2f2;
-      padding: 50px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
     .container {
       background: white;
-      padding: 40px;
+      padding: 30px;
       max-width: 400px;
-      margin: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
     }
     h1 {
       color: #333;
     }
     p {
-      color: #555;
+      color: #666;
+      font-size: 16px;
+      margin: 10px 0 20px;
     }
     .paypal-button {
-      margin-top: 30px;
+      margin: 20px 0;
     }
-    .share {
-      margin-top: 40px;
+    input[type=submit] {
+      background-color: #0070ba;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
     }
     .share a {
       display: inline-block;
-      margin: 5px 10px;
+      margin: 5px 8px;
       text-decoration: none;
       color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-size: 14px;
     }
     .whatsapp { background-color: #25D366; }
     .facebook { background-color: #3b5998; }
@@ -46,22 +66,21 @@
 </head>
 <body>
   <div class="container">
+    <img class="profile-img" src="https://via.placeholder.com/100" alt="Your photo" />
     <h1>Support My Work 🙏</h1>
-    <p>If you'd like to support me, feel free to donate using the button below.</p>
+    <p>If you’d like to support me, feel free to donate using the button below.</p>
 
     <form action="https://www.paypal.com/donate" method="post" target="_blank" class="paypal-button">
       <input type="hidden" name="business" value="sagarmunde669@gmail.com" />
-      <input type="hidden" name="currency_code" value="USD" />
-      <input type="submit" value="Donate via PayPal" 
-             style="background-color:#0070ba;color:white;padding:12px 25px;
-                    font-size:16px;border:none;border-radius:5px;cursor:pointer;" />
+      <input type="hidden" name="currency_code" value="INR" />
+      <input type="submit" value="Donate via PayPal (₹)" />
     </form>
 
     <div class="share">
       <p>Share this page:</p>
-      <a href="https://wa.me/?text=Support%20me%20by%20donating%20here:%20https://sagarmunde1995.github.io/donate-page/" class="whatsapp">WhatsApp</a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://sagarmunde1995.github.io/donate-page/" class="facebook">Facebook</a>
-      <a href="https://twitter.com/intent/tweet?text=Support%20me%20by%20donating%20here:%20https://sagarmunde1995.github.io/donate-page/" class="twitter">Twitter</a>
+      <a class="whatsapp" href="https://wa.me/?text=Support%20me%20by%20donating%20here:%20https://sagarmunde1995.github.io/donate-page/">WhatsApp</a>
+      <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://sagarmunde1995.github.io/donate-page/">Facebook</a>
+      <a class="twitter" href="https://twitter.com/intent/tweet?text=Support%20me%20by%20donating%20here:%20https://sagarmunde1995.github.io/donate-page/">Twitter</a>
     </div>
   </div>
 </body>
